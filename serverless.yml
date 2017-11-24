@@ -1,0 +1,46 @@
+#
+# Copyright 2017 Wireline, Inc.
+#
+
+service: test-serverless-wireline
+
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: us-east-1
+
+  stage: dev
+
+
+plugins:
+
+  - "serverless-webpack"
+  - "serverless-log-forwarding"
+  - "serverless-plugin-info-json"
+  - "serverless-wireline"
+
+
+custom:
+
+  logForwarding:
+    destinationARN: "arn:aws:lambda:us-east-1:370180315098:function:wireline-metrics-dev-logger"
+    filterPattern: "\"METRIC:\""
+    stages:
+      - dev
+
+  wireline:
+    domain: "example.com"
+    apiKey: "TESTING"
+
+
+functions:
+
+  test:
+    handler: handler.test
+    description: "Test service."
+    events:
+      - http:
+          path: test
+          method: get
+          cors: true

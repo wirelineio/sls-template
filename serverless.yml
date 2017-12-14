@@ -2,7 +2,7 @@
 # Copyright 2017 Wireline, Inc.
 #
 
-service: test-serverless-wireline
+service: test-wireline
 
 
 provider:

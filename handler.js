@@ -2,7 +2,7 @@
 // Copyright 2017 Wireline, Inc.
 //
 
-import Wireline from 'wireline-sdk';
+import Wireline from '@wirelineio/sdk';
 
 module.exports = {
 

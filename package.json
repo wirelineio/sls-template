@@ -6,19 +6,18 @@
   "repository": "https://github.com/wirelineio/darkstar",
   "main": "index.js",
   "devDependencies": {
+    "@wirelineio/serverless-wireline": "0.0.1",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-jest": "^21.0.2",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-0": "^6.24.1",
     "serverless-log-forwarding": "^1.1.5",
-    "serverless-webpack": "^4.1.0",
-    "serverless-wireline": "0.0.1"
+    "serverless-webpack": "^4.1.0"
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "wireline-sdk": "0.0.1",
-    "wireline-store": "0.0.1"
+    "@wirelineio/sdk": "0.0.1"
   },
   "jest": {
     "verbose": false,

@@ -15,10 +15,9 @@ provider:
 
 plugins:
 
-  - "serverless-webpack"
+  - "@wirelineio/serverless-wireline"
   - "serverless-log-forwarding"
-  - "serverless-plugin-info-json"
-  - "serverless-wireline"
+  - "serverless-webpack"
 
 
 custom:

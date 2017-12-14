@@ -1,10 +1,8 @@
 {
-  "name": "test-serverless-wireline",
+  "name": "test-wireline",
   "version": "0.0.1",
-  "description": "Wireline Test Services.",
+  "description": "Wireline Test Service.",
   "license": "UNLICENSED",
-  "repository": "https://github.com/wirelineio/darkstar",
-  "main": "index.js",
   "devDependencies": {
     "@wirelineio/serverless-wireline": "0.0.1",
     "babel-cli": "^6.24.1",
@@ -13,18 +11,11 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-0": "^6.24.1",
     "serverless-log-forwarding": "^1.1.5",
-    "serverless-webpack": "^4.1.0"
+    "serverless-webpack": "^4.1.0",
+    "webpack": "^3.10.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
     "@wirelineio/sdk": "0.0.1"
-  },
-  "jest": {
-    "verbose": false,
-    "cacheDirectory": "/tmp/jest",
-    "transformIgnorePatterns": [
-      "/node_modules/(?!wireline-)"
-    ]
   },
   "scripts": {
     "info": "sls wireline info",

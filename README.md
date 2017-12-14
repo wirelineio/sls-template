@@ -1,8 +1,19 @@
 # Wireline Service Template.
 
-NOTE: This is currently internal to the Wireline team and requires private access to the @wirelineio NPM team.
+## NOTE: PRIVATE
+
+This package is currently internal to the Wireline team; it requires private access to the @wirelineio org.
 
 https://www.npmjs.com/org/wirelineio
+
+~~~~
+yarn login
+~~~~
+
+Check your auth token `~/.npmrc`.
+
+
+## Quick Start
 
 ~~~~
 sls create --template-url https://github.com/wirelineio/sls-template --name test-wireline

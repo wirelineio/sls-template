@@ -8,7 +8,7 @@ module.exports = {
 
   test: Wireline.exec(async (event, context) => {
     return {
-      message: 'Hello'
+      message: 'Hello Wireline'
     };
   })
 };

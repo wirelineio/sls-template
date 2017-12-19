@@ -4,8 +4,7 @@
       "debug": false,
       "targets": {
         "node": "6.10"
-      },
-      "useBuiltIns": true
+      }
     }],
 
     "stage-0"

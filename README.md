@@ -11,7 +11,11 @@ https://www.npmjs.com/org/wirelineio
 yarn login
 ~~~~
 
-Check your auth token `~/.npmrc`.
+Check your auth token `~/.npmrc`. If not set or if there are issues downloading private packages
+
+~~~~
+npm login
+~~~~
 
 ## Developing
 
@@ -25,6 +29,9 @@ yarn link
 # Go to the new app created from template.
 cd ../wireline-testing
 yarn link "@wirelineio/serverless-wireline"
+
+# now to install packages
+yarn install
 ~~~~
 
 ### Active development of sls-plugin

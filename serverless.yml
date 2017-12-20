@@ -32,6 +32,12 @@ custom:
     domain: "example.com"
     apiKey: "TESTING"
 
+    tests:
+      test:
+        hello:
+          event: "./tests/hello.json"
+          description: "Hello world."
+
 
 functions:
 

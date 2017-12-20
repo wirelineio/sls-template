@@ -6,9 +6,11 @@ import Wireline from '@wirelineio/sdk';
 
 module.exports = {
 
-  test: Wireline.exec((event, context) => {
+  test: Wireline.exec(async (event, context) => {
+    let { name } = event.queryStringParameters || {};
+
     return {
-      message: 'Hello Wireline'
+      message: `Hello ${name}`
     };
   })
 };

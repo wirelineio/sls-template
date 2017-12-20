@@ -2,6 +2,7 @@
   "name": "test-wireline",
   "version": "0.0.1",
   "description": "Wireline Test Service.",
+  "repository": "",
   "license": "UNLICENSED",
   "devDependencies": {
     "@wirelineio/serverless-wireline": "^0.0.3",
@@ -21,7 +22,7 @@
   },
   "scripts": {
     "info": "sls wireline info",
-    "debug": "yarn link @wirelineio/sdk && yarn link @wirelineio/store",
+    "link": "yarn link @wirelineio/sdk && yarn link @wirelineio/store",
     "deploy": "sls deploy",
     "logs": "sls logs -f test -tail --startTime 1m",
     "test": "sls invoke -f test | jq",

@@ -9,8 +9,8 @@ module.exports = {
   test: Wireline.exec(async (event, context) => {
     let { name } = event.queryStringParameters || {};
 
-    return {
+    response.send({
       message: `Hello ${name}`
-    };
+    });
   })
 };

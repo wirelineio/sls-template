@@ -23,7 +23,7 @@
     "info": "sls wireline info",
     "deploy": "sls deploy",
     "logs": "sls logs -f test -tail --startTime 1m",
-    "test": "sls invoke -f test",
+    "test": "sls invoke -f test | jq",
     "register": "sls wireline register"
   }
 }

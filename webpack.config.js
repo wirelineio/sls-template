@@ -17,7 +17,7 @@ module.exports = {
   output: {
     path: path.resolve('./dist'),
     filename: '[name].js',
-    libraryTarget: 'commonjs'
+    libraryTarget: 'commonjs2'
   },
 
   module: {

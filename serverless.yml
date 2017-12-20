@@ -32,6 +32,9 @@ custom:
     domain: "example.com"
     apiKey: "TESTING"
 
+    services:
+      "wireline.io/wireline-store": "https://store.wireline.ninja"
+
     tests:
       test:
         hello:

@@ -25,9 +25,6 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,    // Don't transpile deps.
-        include: [
-          '.'
-        ],
         use: {
           loader: 'babel-loader',
           options: {

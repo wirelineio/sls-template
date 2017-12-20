@@ -4,7 +4,7 @@
   "description": "Wireline Test Service.",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@wirelineio/serverless-wireline": "^0.0.1",
+    "@wirelineio/serverless-wireline": "^0.0.3",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-jest": "^21.0.2",
@@ -15,7 +15,8 @@
     "webpack": "^3.10.0"
   },
   "dependencies": {
-    "@wirelineio/sdk": "^0.0.1"
+    "@wirelineio/sdk": "^0.0.3",
+    "babel-polyfill": "^6.26.0"
   },
   "scripts": {
     "info": "sls wireline info",

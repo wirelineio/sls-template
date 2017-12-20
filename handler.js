@@ -6,7 +6,7 @@ import Wireline from '@wirelineio/sdk';
 
 module.exports = {
 
-  test: Wireline.exec(async (event, context) => {
+  test: Wireline.exec((event, context) => {
     return {
       message: 'Hello Wireline'
     };

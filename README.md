@@ -41,7 +41,7 @@ cd darkstar/sub/sls-plugin
 yarn link
 webpack --watch
 
-cd darkstar/sub/sdk
+cd darkstar/sub/sls-sdk
 yarn link
 
 cd test-wireline

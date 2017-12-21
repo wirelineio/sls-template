@@ -21,11 +21,10 @@
     "babel-polyfill": "^6.26.0"
   },
   "scripts": {
-    "info": "sls wireline info",
-    "link": "yarn link @wirelineio/sdk && yarn link @wirelineio/store",
     "deploy": "sls deploy",
+    "info": "sls wireline info",
+    "test": "sls invoke -f test -p ./tests/hello.json | jq",
     "logs": "sls logs -f test -tail --startTime 1m",
-    "test": "sls invoke -f test | jq",
     "register": "sls wireline register"
   }
 }

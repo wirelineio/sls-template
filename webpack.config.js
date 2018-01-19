@@ -3,6 +3,7 @@
 //
 
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 
@@ -19,6 +20,12 @@ module.exports = {
     filename: '[name].js',
     libraryTarget: 'commonjs2'
   },
+
+  plugins: [
+    new CopyWebpackPlugin([
+      'wireline.yml'
+    ])
+  ],
 
   module: {
     rules: [

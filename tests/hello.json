@@ -2,6 +2,9 @@
   "resource": "/test",
   "path": "/test",
   "httpMethod": "GET",
+  "headers": {
+    "X-API-KEY": "TEST_API_KEY"
+  },
   "queryStringParameters": {
     "name": "Wireline"
   }

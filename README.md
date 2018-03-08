@@ -52,6 +52,6 @@ yarn link "@wirelineio/sdk"
 
 ### Troubleshooting
 
-- `An unexpected error occurred: "https://registry.yarnpkg.com/@wirelineio%2fsdk: Not found"` while doing `yarn install`
+- `An unexpected error occurred: "https://registry.yarnpkg.com/@wirelineio%2fsdk: Not found"` on running `yarn install`
 
-This error comes when you are not logged to npm account. Your npm account also needs to be added to Wireline's private npm repo. Then run `npm login` and enter necessary credentials. Then try `yarn install` again.
+This error occurs when you are not logged into your npm account. Your npm account also needs to be added to Wireline's private npm organization. Then run `npm login` and enter necessary credentials. Then try `yarn install` again.
